@@ -9,6 +9,14 @@ def japan(city):
     return render_template("hello.html", city=city)
 
 
+bullets = [
+    "項目1",
+    "項目2",
+    "項目3",
+    "項目4"
+]
+
+
 @app.route("/")
 def hello():
-    return "<h1>Hello, World!</h1>"
+    return render_template("bullet.html", bullets=bullets)
