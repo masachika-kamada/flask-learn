@@ -6,9 +6,9 @@ app = Flask(__name__)
 
 @app.route("/japan/<city>")
 def japan(city):
-    return f"<h1>Hello, {city} in Japan!</h1>"
+    return render_template("hello.html", city=city)
 
 
 @app.route("/")
 def hello():
-    return render_template("hello.html")
+    return "<h1>Hello, World!</h1>"
