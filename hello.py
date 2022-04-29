@@ -2,16 +2,17 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/japan")
+
+@app.route("/japan/tokyo")
 def japan():
-    return "<p>Hello, Japan!</p>"
+    return "<p>Hello, tokyo in Japan!</p>"
 
 
-@app.route("/america")
-def america():
-    return "<p>Hello, America!</p>"
+@app.route("/japan/nara")
+def nara():
+    return "<p>Hello, nara in Japan!</p>"
 
 
-@app.route("/world")
-def world():
-    return "<p>Hello, World!</p>"
+@app.route("/japan/saitama")
+def saitama():
+    return "<p>Hello, saitama in Japan!</p>"
